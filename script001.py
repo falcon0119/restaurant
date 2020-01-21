@@ -63,7 +63,7 @@ def act1():
     selected_drink = drinks[drink_order]
 
 # コンソールから入力を受け取り、変数countに代入してください
-    count = int(input('何セット買いますか？(3つ以上で1割引): '))
+    count = int(input('How many sets would you like to purchase？(10% off when you purchase 3 sets): '))
 
 # selected_foodとselected_drinkのそれぞれに対して、get_total_priceメソッドを呼び出してください
     result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
@@ -72,13 +72,23 @@ def act1():
     print()
     print('----------------------------------------------------------')
     print('Here is your total order:')
+    print()
     print(str(selected_food.name) + ' ¥' + str(selected_food.price) + ' x ' + str(count))
     print(str(selected_dressing.name) + ' ¥' + str(selected_dressing.price) + ' x ' + str(count))
     print(str(selected_drink.name) + ' ¥' + str(selected_drink.price) + ' x ' + str(count))
     print('----------------------------------------------------------')
     print('Your total is ' + str(result) + ' Yen')
+    print()
     print('Thank you for using W-Delivers! We hope to serve you again soon!')
     print('----------------------------------------------------------')
+    print()
     print('Your order is on its way')
+
+    import time
+
+    for i in range(100):
+        print('.', end='')
+        time.sleep(1)
+
 
 
