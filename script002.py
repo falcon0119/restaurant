@@ -75,6 +75,13 @@ def act2():
     result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
 # 「合計は〇〇円です」となるように出力してください
+    print()
+    print('----------------------------------------------------------')
+    print('Your order is:')
+    print(str(selected_food.name) + ' ¥' + str(selected_food.price) + ' x ' + str(count))
+    print(str(selected_drink.name) + ' ¥' + str(selected_drink.price) + ' x ' + str(count))
+    print('----------------------------------------------------------')
     print('Your total is ' + str(result) + ' Yen')
+    print('----------------------------------------------------------')
 
 
