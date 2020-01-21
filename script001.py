@@ -34,7 +34,7 @@ def act1():
         print(str(index) + '. ' + food.info())
         index += 1
         
-    print('Dressing Menu')
+    print('おおおお')
     index = 0
     for dressing in dressings:
         print(str(index) + '. ' + dressing.info())
