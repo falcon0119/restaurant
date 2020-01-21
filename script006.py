@@ -73,10 +73,21 @@ def act6():
 # 「合計は〇〇円です」となるように出力してください
     print()
     print('----------------------------------------------------------')
-    print('Your order is:')
+    print('Here is your total order:')
+    print()
     print(str(selected_food.name) + ' ¥' + str(selected_food.price) + ' x ' + str(count))
+    print(str(selected_dressing.name) + ' ¥' + str(selected_dressing.price) + ' x ' + str(count))
     print(str(selected_drink.name) + ' ¥' + str(selected_drink.price) + ' x ' + str(count))
-    print(str(selected_dessert.name) + ' ¥' + str(selected_dessert.price) + ' x ' + str(count))
     print('----------------------------------------------------------')
     print('Your total is ' + str(result) + ' Yen')
+    print()
+    print('Thank you for using W-Delivers! We hope to serve you again soon!')
     print('----------------------------------------------------------')
+    print()
+    print('Your order is on its way')
+
+    import time
+
+    for i in range(100):
+        print('.', end='')
+        time.sleep(1)
