@@ -71,12 +71,14 @@ def act1():
 # 「合計は〇〇円です」となるように出力してください
     print()
     print('----------------------------------------------------------')
-    print('Your order is:')
+    print('Here is your total order:')
     print(str(selected_food.name) + ' ¥' + str(selected_food.price) + ' x ' + str(count))
     print(str(selected_dressing.name) + ' ¥' + str(selected_dressing.price) + ' x ' + str(count))
     print(str(selected_drink.name) + ' ¥' + str(selected_drink.price) + ' x ' + str(count))
     print('----------------------------------------------------------')
     print('Your total is ' + str(result) + ' Yen')
+    print('Thank you for using W-Delivers! We hope to serve you again soon!')
     print('----------------------------------------------------------')
+    print('Your order is on its way')
 
 
