@@ -1,16 +1,16 @@
 from restaurant_name import Restaurant_name
 
-restaurant1 = Restaurant_name('High Five Salad', " / Salad", "Waseda")
-restaurant2 = Restaurant_name('Thaliya', "Indian Food", "Waseda")
-restaurant3 = Restaurant_name('Toden Table', " / Japanese food", "Waseda")
-restaurant4 = Restaurant_name('Dondondon', "/ Korean food", "Waseda")
-restaurant5 = Restaurant_name('Good Morning Cafe', " / Western food", "Waseda")
-restaurant6 = Restaurant_name('where is a dog','/ Vegan Cafe','Waseda')
+restaurant1 = Restaurant_name('High Five Salad', " (Salad)", "Waseda")
+restaurant2 = Restaurant_name('Thaliya', " (Indian food)", "Waseda")
+restaurant3 = Restaurant_name('Toden Table', " (Japanese food)", "Waseda")
+restaurant4 = Restaurant_name('Dondondon', " (Korean food)", "Waseda")
+restaurant5 = Restaurant_name('Good Morning Cafe', " (Western food)", "Waseda")
+restaurant6 = Restaurant_name('where is a dog',' (Vegan Cafe)','Waseda')
 
 restaurants = [restaurant1, restaurant2, restaurant3,restaurant4,restaurant5, restaurant6]
 
 print('----------------------------------------------------------')
-print('---------------Hello, welcome to W-Delivers!--------------')
+print('---------------Hello, welcome to W-Delivers! --------------')
 print('----------------------------------------------------------')
 input('Please insert your name: ')
 input('Please insert your faculty: ')
