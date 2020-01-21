@@ -33,13 +33,37 @@ def act2():
         print(str(index) + '. ' + drink.info())
         index += 1
 
+   #PLEASE TRY IF IT RUNS
+
     print('--------------------')
 
-    food_order = int(input('Please select a number from the food menu: '))
-    selected_food = foods[food_order]
+    food_order = input('Please select a number from the food menu: ')
+    
+    while food_order.isalpha():
+        print("Please insert a valid number.")
+        print()
+        food_order = input('Please select a number from the food menu: ')
+        
+    while int(food_order) > index or int(food_order) < 0:
+        print("Please insert a valid number.")
+        print()
+        food_order = input('Please select a number from the food menu: ')
 
+    selected_food = foods[int(food_order)]
+    
     drink_order = int(input('Please select a number from the drink menu: '))
-    selected_drink = drinks[drink_order]
+    
+    while drink_order.isalpha():
+        print("Please insert a valid number.")
+        print()
+        food_order = input('Please select a number from the drink menu: ')
+        
+    while int(food_order) > index or int(drink_order) < 0:
+        print("Please insert a valid number.")
+        print()
+        drink_order = input('Please select a number from the drink menu: ')
+        
+    selected_drink= drinks[int(drink_order)]
 
 # コンソールから入力を受け取り、変数countに代入してください
     count = int(input('How many sets would you like to purchase？(10% off when you purchase 3 sets): '))
