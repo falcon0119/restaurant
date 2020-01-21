@@ -20,6 +20,8 @@ input('Please insert preferred time of pickup : ')
 print('----------------------------------------------------------')
 print('Please note that the only payment method available is CASH')
 print('----------------------------------------------------------')
+print()
+print()
 
 print('These are the restaurants that we reccomend around Waseda area!')
 index = 0
