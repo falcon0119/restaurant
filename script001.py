@@ -18,6 +18,7 @@ def act1():
     dressing3 = Dressing('Creamy Seasame',0,67)
     dressing4 = Dressing('Honey Mustard',0,127)
     dressing5 = Dressing('Balsamic Vinaigrette',0,127)
+    dressing6 = Dressing('Skip',0,0)
 
     dressings = [dressing1, dressing2, dressing3, dressing4, dressing5]
     
