@@ -28,7 +28,7 @@ def act1():
     drink4 = Drink('Seasonal Smoothie', 500, 245)
     drink5 = Drink('Skip',0, 0) 
 
-    drinks = [drink1, drink2, drink3, drink4]
+    drinks = [drink1, drink2, drink3, drink4, drink5]
     
     print()
     print('***** FOOD MENU *****')
@@ -69,6 +69,14 @@ def act1():
     result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
 # 「合計は〇〇円です」となるように出力してください
+    print()
+    print('----------------------------------------------------------')
+    print('Your order is:')
+    print(str(selected_food.name) + ' ¥' + str(selected_food.price))
+    print(str(selected_dressing.name) + ' ¥' + str(selected_dressing.price))
+    print(str(selected_drink.name) + ' ¥' + str(selected_drink.price))
+    print('----------------------------------------------------------')
     print('Your total is ' + str(result) + ' Yen')
+    print('----------------------------------------------------------')
 
 
