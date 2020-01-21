@@ -19,13 +19,13 @@ def act3():
 
     drinks = [drink1, drink2, drink3]
     
-    print('フードメニュー')
+    print('FOOD MENU')
     index = 0
     for food in foods:
         print(str(index) + '. ' + food.info())
         index += 1
 
-    print('ドリンクメニュー')
+    print('DRINK MENU')
     index = 0
     for drink in drinks:
         print(str(index) + '. ' + drink.info())
@@ -40,10 +40,10 @@ def act3():
     selected_drink = drinks[drink_order]
 
 # コンソールから入力を受け取り、変数countに代入してください
-    count = int(input('How many sets would you like to purchase？(10% off when you purchase 3 sets): '))
+    count = int(input('How many sets would you like to purchase？(10% off when you purchase 3 or more sets): '))
 
 # selected_foodとselected_drinkのそれぞれに対して、get_total_priceメソッドを呼び出してください
     result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
 # 「合計は〇〇円です」となるように出力してください
-    print('合計は' + str(result) + '円です')
+    print('Your total is ' + str(result) + ' Yen')
