@@ -21,6 +21,7 @@ def act2():
 
     drinks = [drink1, drink2, drink3, drink4, drink5, drink6]
     
+    print()
     print('***** FOOD MENU *****')
     index = 0
     for food in foods:
