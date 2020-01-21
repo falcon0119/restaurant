@@ -35,48 +35,51 @@ def act2():
         print(str(index) + '. ' + drink.info())
         index += 1
 
-   #PLEASE TRY IF IT RUNS
-
+#if choose invalid numbers
+        
     print('--------------------')
 
-    food_order = input('Please select a number from the food menu: ')
-    
-    while food_order.isalpha():
-        print("Please insert a valid number.")
-        print()
-        food_order = input('Please select a number from the food menu: ')
-        
-    while int(food_order) > index or int(food_order) < 0:
-        print("Please insert a valid number.")
-        print()
+
+    while True:
         food_order = input('Please select a number from the food menu: ')
 
-    selected_food = foods[int(food_order)]
-    
-    drink_order = input('Please select a number from the drink menu: ')
-    
-    while drink_order.isalpha():
-        print("Please insert a valid number.")
-        print()
-        food_order = input('Please select a number from the drink menu: ')
+        if food_order == '0' or food_order == '1' or food_order == '2' or food_order == '3' or food_order == '4' or food_order == '5':
+            selected_food = foods[int(food_order)]
+
+        else:
+            print("Please insert a valid number.")
+            print()
+            continue
         
-    while int(drink_order) > index or int(drink_order) < 0:
-        print("Please insert a valid number.")
-        print()
+        break
+
+    while True:
         drink_order = input('Please select a number from the drink menu: ')
-        
-    selected_drink= drinks[int(drink_order)]
 
+        if drink_order == '0' or drink_order == '1' or drink_order == '2' or drink_order == '3' or drink_order == '4' or drink_order == '5':
+            selected_drink = drinks[int(drink_order)]
+
+        else:
+            print("Please insert a valid number.")
+            print()
+            continue
+        
+        break
+     
+
+# コンソールから入力を受け取り、変数countに代入してください
     count = int(input('How many sets would you like to purchase？(10% off when you purchase 3 sets): '))
 
+
+# selected_foodとselected_drinkのそれぞれに対して、get_total_priceメソッドを呼び出してください
     result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
+# 「合計は〇〇円です」となるように出力してください
     print()
     print('----------------------------------------------------------')
     print('Here is your total order:')
     print()
     print(str(selected_food.name) + ' ¥' + str(selected_food.price) + ' x ' + str(count))
-    print(str(selected_dressing.name) + ' ¥' + str(selected_dressing.price) + ' x ' + str(count))
     print(str(selected_drink.name) + ' ¥' + str(selected_drink.price) + ' x ' + str(count))
     print('----------------------------------------------------------')
     print('Your total is ' + str(result) + ' Yen')
@@ -91,4 +94,5 @@ def act2():
     for i in range(100):
         print('.', end='')
         time.sleep(1)
+
 
