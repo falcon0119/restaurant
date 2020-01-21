@@ -9,6 +9,17 @@ restaurant6 = Restaurant_name('where is a dog','Vegan Cafe','Waseda')
 
 restaurants = [restaurant1, restaurant2, restaurant3,restaurant4,restaurant5, restaurant6]
 
+print('----------------------------------------------------------')
+print('---------------Hello, welcome to W-Delivers!--------------')
+print('----------------------------------------------------------')
+input('Please insert your name: ')
+input('Please insert your faculty: ')
+input('PLease insert your grade: ')
+input('Please state the building and classroom number of pick up location (Must be on Waseda or Toyama Campus): ')
+input('Please insert preferred time of pickup : ')
+print('----------------------------------------------------------')
+print('Please note that the only payment method available is CASH')
+print('----------------------------------------------------------')
 
 print('These are the restaurants that we reccomend around Waseda area!')
 index = 0
@@ -18,7 +29,7 @@ for restaurant_name in restaurants:
 
 print('--------------------')
 
-restaurant_order = int(input('Please enter the number of desired restaurant: '))
+restaurant_order = int(input('Please enter a number corresponding to a restaurant: '))
 selected_restaurant = restaurants[restaurant_order]
 
    
