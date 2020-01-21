@@ -28,7 +28,7 @@ index = 0
 for restaurant_name in restaurants:
     print(str(index) + '. ' + restaurant_name.info())
     index += 1
-
+print()
 print('----------------------------------------------------------')
    
 import script001
