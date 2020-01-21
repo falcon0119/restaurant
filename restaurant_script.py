@@ -63,7 +63,7 @@ while True:
         
     else:
         print('ERROR:Invalid Input. Try Again!') 
-
+    break
     
     
     
