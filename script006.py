@@ -52,6 +52,7 @@ def act6():
         print(str(index) + '. ' + dessert.info())
         index += 1
     
+#if choose invalid number
 
     print('--------------------')
 
@@ -73,6 +74,19 @@ def act6():
 
         if drink_order == '0' or drink_order == '1' or drink_order == '2' or drink_order == '3' or drink_order == '4' or drink_order == '5' or drink_order == '6':
             selected_drink = drinks[int(drink_order)]
+
+        else:
+            print("Please insert a valid number.")
+            print()
+            continue
+        
+        break
+     
+    while True:
+        dessert_order = input('Please select a number from the dessert menu: ')
+
+        if dessert_order == '0' or dessert_order == '1' or dessert_order == '2' or dessert_order == '3' or dessert_order == '4' or dessert_order == '5' or dessert_order == '6':
+            selected_dessert = desserts[int(dessert_order)]
 
         else:
             print("Please insert a valid number.")
