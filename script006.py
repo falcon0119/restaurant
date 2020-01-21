@@ -30,7 +30,7 @@ def act6():
 
     desserts = [dessert1, dessert2, dessert3, dessert4, dessert5, dessert6]
     
-    
+    print()
     print('***** FOOD MENU *****')
     index = 0
     for food in foods:
