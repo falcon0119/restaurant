@@ -2,6 +2,7 @@ def act1():
 
     from food import Food
     from drink import Drink
+    from dressing import Dressing 
 
     food1 = Food('High Five Power Salad', 1580, 476)
     food2 = Food('Smoked Duck & Honey Nut Salad', 1080, 220)
