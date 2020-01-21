@@ -29,7 +29,8 @@ def act1():
 
     drinks = [drink1, drink2, drink3, drink4]
     
-    print('***** SALAD MENU *****')
+    print()
+    print('***** FOOD MENU *****')
     index = 0
     for food in foods:
         print(str(index) + '. ' + food.info())
