@@ -29,7 +29,6 @@ for restaurant_name in restaurants:
     print(str(index) + '. ' + restaurant_name.info())
     index += 1
 print()
-print('----------------------------------------------------------')
    
 import script001
 import script002
@@ -40,7 +39,8 @@ import script006
 
 while True:
     restaurant_order = input('Please enter a number corresponding to a restaurant: ')
-    
+    print('----------------------------------------------------------')
+
     if restaurant_order =='0' :
         script001.act1()
 
