@@ -51,7 +51,7 @@ def act2():
 
     selected_food = foods[int(food_order)]
     
-    drink_order = int(input('Please select a number from the drink menu: '))
+    drink_order = input('Please select a number from the drink menu: ')
     
     while drink_order.isalpha():
         print("Please insert a valid number.")
