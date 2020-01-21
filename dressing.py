@@ -1,6 +1,6 @@
 from menu_item import MenuItem
 
-class dressing(MenuItem):
+class Dressing(MenuItem):
     def __init__(self, name, price, calorie):
         super().__init__(name, price)
         self.calorie = calorie
