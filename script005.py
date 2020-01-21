@@ -64,14 +64,11 @@ def act5():
     dessert_order = int(input('Please select a number from the dessert menu: '))
     selected_dessert = desserts[dessert_order]
 
-# コンソールから入力を受け取り、変数countに代入してください
     count = int(input('How many sets would you like to purchase？(10% off when you purchase 3 sets): '))
 
-# selected_foodとselected_drinkのそれぞれに対して、get_total_priceメソッドを呼び出してください
     result =selected_food.get_total_price(count) + selected_drink.get_total_price(count) + selected_dessert.get_total_price(count)
 
     
-# 「合計は〇〇円です」となるように出力してください
     print()
     print('----------------------------------------------------------')
     print('Here is your total order:')
