@@ -22,10 +22,11 @@ def act1():
 
     dressings = [dressing1, dressing2, dressing3, dressing4, dressing5, dressing6]
     
-    drink1 = Drink('Classic Caesar',0,73)
-    drink2 = Drink('Onion Soy',0,107)
-    drink3 = Drink('Creamy Seasame',0,67)
-    drink4 = Drink('Skip',0, 0)
+    drink1 = Drink('Green Smoothie', 360, 126)
+    drink2 = Drink('Homemade Soup', 360, 234)
+    drink3 = Drink('Iced Coffee', 100, 15)
+    drink4 = Drink('Seasonal Smoothie', 500, 245)
+    drink5 = Drink('Skip',0, 0) 
 
     drinks = [drink1, drink2, drink3, drink4]
     
