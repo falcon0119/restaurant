@@ -8,11 +8,13 @@ def act4():
     food3 = Food('Cold Noodles ', 800, 500)
     food4 = Food('Spicy Tofu Soup', 800, 520)
     food5 = Food('Bulgogi Set Menu', 1000, 890)
+    food6 = Food('Skip')
              
     foods = [food1, food2, food3, food4, food5]
 
     drink1 = Drink('Mineral Water', 200, 0)
     drink2 = Drink('Oolong Tea', 200, 0)
+    drink3 = Drink('Skip') 
 
     drinks= [drink1, drink2]
     
