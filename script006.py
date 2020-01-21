@@ -2,6 +2,7 @@ def act6():
 
     from food import Food
     from drink import Drink
+    from dessert import Dessert
 
     food1 = Food('Asian Curry Plate (soup and mini desert set)', 1200, 590)
     food2 = Food(' Rice Bowl with Vegetables (soup and mini desert set)', 1200, 370)
