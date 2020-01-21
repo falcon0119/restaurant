@@ -43,7 +43,7 @@ def act6():
         print(str(index) + '. ' + drink.info())
         index += 1
 
-        print('DESSERT MENU')
+    print('DESSERT MENU')
     index = 0
     for dessert in desserts:
         print(str(index) + '. ' + dessert.info())
