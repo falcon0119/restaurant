@@ -30,10 +30,6 @@ for restaurant_name in restaurants:
     index += 1
 
 print('--------------------')
-
-restaurant_order = int(input('Please enter a number corresponding to a restaurant: '))
-selected_restaurant = restaurants[restaurant_order]
-
    
 import script001
 import script002
@@ -42,7 +38,9 @@ import script004
 import script005
 import script006
 
-while True: 
+while True:
+    restaurant_order = int(input('Please enter a number corresponding to a restaurant: '))
+    
     if restaurant_order ==0 :
         script001.act1()
 
@@ -62,13 +60,9 @@ while True:
         script006.act6()
         
     else:
-        print('ERROR:Invalid Input. Try Again!') 
+        print('ERROR:Invalid Input. Try Again!')
+        continue
+    
     break
     
-    
-    
-
-
-
-
     
