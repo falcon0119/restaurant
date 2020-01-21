@@ -20,7 +20,7 @@ def act1():
     dressing5 = Dressing('Balsamic Vinaigrette',0,127)
     dressing6 = Dressing('Skip',0,0)
 
-    dressings = [dressing1, dressing2, dressing3, dressing4, dressing5]
+    dressings = [dressing1, dressing2, dressing3, dressing4, dressing5, dressing6]
     
     drink1 = Drink('Classic Caesar',0,73)
     drink2 = Drink('Onion Soy',0,107)
