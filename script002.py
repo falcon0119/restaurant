@@ -17,7 +17,7 @@ def act2():
     drink3 = Drink('Strawberry Lassi', 350, 300)
     drink4 = Drink('Melon Milk Tapioca', 350, 300)
     drink5 = Drink('Matcha Lassi', 350, 300)
-    drink6 = Drink('Skip' 0, 0)
+    drink6 = Drink('Skip', 0, 0)
 
     drinks = [drink1, drink2, drink3, drink4, drink5, drink6]
     
