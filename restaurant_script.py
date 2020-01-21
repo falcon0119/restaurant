@@ -1,11 +1,11 @@
 from restaurant_name import Restaurant_name
 
-restaurant1 = Restaurant_name('High Five Salad', " (Salad)", "Waseda")
-restaurant2 = Restaurant_name('Thaliya', " (Indian food)", "Waseda")
-restaurant3 = Restaurant_name('Toden Table', " (Japanese food)", "Waseda")
-restaurant4 = Restaurant_name('Dondondon', " (Korean food)", "Waseda")
-restaurant5 = Restaurant_name('Good Morning Cafe', " (Western food)", "Waseda")
-restaurant6 = Restaurant_name('where is a dog',' (Vegan Cafe)','Waseda')
+restaurant1 = Restaurant_name('High Five Salad', " / Salad", "Waseda")
+restaurant2 = Restaurant_name('Thaliya', " / Indian food", "Waseda")
+restaurant3 = Restaurant_name('Toden Table', " / Japanese food", "Waseda")
+restaurant4 = Restaurant_name('Dondondon', " / Korean food", "Waseda")
+restaurant5 = Restaurant_name('Good Morning Cafe', " / Western food", "Waseda")
+restaurant6 = Restaurant_name('where is a dog',' / Vegan Cafe','Waseda')
 
 restaurants = [restaurant1, restaurant2, restaurant3,restaurant4,restaurant5, restaurant6]
 
@@ -15,7 +15,7 @@ print('----------------------------------------------------------')
 input('Please insert your name: ')
 input('Please insert your faculty: ')
 input('PLease insert your grade: ')
-input('Please state the building and classroom number of pick up location (Must be on Waseda or Toyama Campus): ')
+input('Please state the building and classroom number of pick up location (Only available for Waseda or Toyama Campus): ')
 input('Please insert preferred time of pickup (specify am or pm) : ')
 print('----------------------------------------------------------')
 print('Please note that the only payment method available is CASH')
@@ -38,7 +38,7 @@ import script005
 import script006
 
 while True:
-    restaurant_order = input('Please enter a number corresponding to a restaurant: ')
+    restaurant_order = input('Please enter a number of the restaurant you would like to order from: ')
     print('----------------------------------------------------------')
 
     if restaurant_order =='0' :
