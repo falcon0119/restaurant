@@ -53,15 +53,50 @@ def act1():
 
     print('--------------------')
 
-    food_order = int(input('Please select a number from the food menu: '))
-    selected_food = foods[food_order]
-    
-    dressing_order = int(input('Please select a number from the dressing menu: '))
-    selected_dressing = dressings[dressing_order]
+   #if choose invalid numbers
+        
+    print('--------------------')
 
-    drink_order = int(input('Please select a number from the drink menu: '))
-    selected_drink = drinks[drink_order]
 
+    while True:
+        food_order = input('Please select a number from the food menu: ')
+
+        if food_order == '0' or food_order == '1' or food_order == '2' or food_order == '3' or food_order == '4' or food_order == '5' or food_order == '6':
+            selected_food = foods[int(food_order)]
+
+        else:
+            print("Please insert a valid number.")
+            print()
+            continue
+        
+        break
+        
+    while True:
+        dressing_order = input('Please select a number from the dressing menu: ')
+
+        if dressing_order == '0' or dressing_order == '1' or dressing_order == '2' or dressing_order == '3' or dressing_order == '4' or dressing_order == '5':
+            selected_dressing = dressings[int(dressing_order)]
+
+        else:
+            print("Please insert a valid number.")
+            print()
+            continue
+        
+        break        
+
+    while True:
+        drink_order = input('Please select a number from the drink menu: ')
+
+        if drink_order == '0' or drink_order == '1' or drink_order == '2' or drink_order == '3' or drink_order == '4' or drink_order == '5':
+            selected_drink = drinks[int(drink_order)]
+
+        else:
+            print("Please insert a valid number.")
+            print()
+            continue
+        
+        break
+     
     count = int(input('How many sets would you like to purchase？(10% off when you purchase 3 sets): '))
 
 
