@@ -8,14 +8,14 @@ def act3():
     food3 = Food('Grilled Saba Fish Set Menu', 1100, 550)
     food4 = Food('Deep-fried Oyster Set Menu', 1200, 620)
     food5 = Food('Curry Rice', 900, 600)
-    food6 = Food('Skip') 
+    food6 = Food('Skip', 0, 0) 
 
     foods = [food1, food2, food3, food4, food5]
 
     drink1 = Drink('100% Apple Juice', 500, 50)
     drink2 = Drink('100% Mikan Juice', 500, 50)
     drink3 = Drink(' Ginger Soda', 400, 40)
-    drink4 = Drink('Skip') 
+    drink4 = Drink('Skip', 0, 0) 
 
     drinks = [drink1, drink2, drink3]
     
