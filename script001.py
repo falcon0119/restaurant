@@ -102,6 +102,7 @@ def act1():
 
     result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
+#print total
 
     print()
     print('----------------------------------------------------------')
