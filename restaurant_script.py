@@ -1,16 +1,16 @@
 from restaurant_name import Restaurant_name
 
-restaurant1 = Restaurant_name('High Five Salad', "サラダ", "早稲田駅")
-restaurant2 = Restaurant_name('Thaliya', "カレー", "早稲田駅")
-restaurant3 = Restaurant_name('Toden Table', "カフェ", "早稲田駅")
-restaurant4 = Restaurant_name('Dondondon', "韓国料理", "早稲田駅")
-restaurant5 = Restaurant_name('Good Morning Cafe', "カフェ", "早稲田駅")
-restaurant6 = Restaurant_name('where is a dog','カフェ','早稲田駅')
+restaurant1 = Restaurant_name('High Five Salad', "Salad", "Waseda")
+restaurant2 = Restaurant_name('Thaliya', "Curry", "Waseda")
+restaurant3 = Restaurant_name('Toden Table', "Japanese food", "Waseda")
+restaurant4 = Restaurant_name('Dondondon', "Korean food", "Waseda")
+restaurant5 = Restaurant_name('Good Morning Cafe', "Western food", "Waseda")
+restaurant6 = Restaurant_name('where is a dog','Vegan Cafe','Waseda')
 
 restaurants = [restaurant1, restaurant2, restaurant3,restaurant4,restaurant5, restaurant6]
 
 
-print('あなたにオススメのレストラン')
+print('These are the restaurants that we reccomend around Waseda area!')
 index = 0
 for restaurant_name in restaurants:
     print(str(index) + '. ' + restaurant_name.info())
@@ -18,7 +18,7 @@ for restaurant_name in restaurants:
 
 print('--------------------')
 
-restaurant_order = int(input('行きたいレストランの番号を選択してください: '))
+restaurant_order = int(input('Please enter the number of desired restaurant: '))
 selected_restaurant = restaurants[restaurant_order]
 
    
@@ -29,26 +29,24 @@ import script004
 import script005
 import script006
 
-while True: 
-    if restaurant_order ==0 :
-        script001.act1()
 
-    elif restaurant_order ==1 :
-        script002.act2()
+if restaurant_order ==0 :
+    script001.act1()
 
-    elif restaurant_order ==2 :
-        script003.act3()
+elif restaurant_order ==1 :
+    script002.act2()
 
-    elif restaurant_order ==3 :
-        script004.act4()
+elif restaurant_order ==2 :
+    script003.act3()
 
-    elif restaurant_order ==4 :
-        script005.act5()
+elif restaurant_order ==3 :
+    script004.act4()
 
-    elif restaurant_order ==5 :
-        script006.act6()
-    else:
-        print('ERROR: Invalid input. Try again!') 
+elif restaurant_order ==4 :
+    script005.act5()
+
+elif restaurant_order ==5 :
+    script006.act6()
 
     
     
