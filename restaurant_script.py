@@ -23,13 +23,13 @@ print('----------------------------------------------------------')
 print()
 print()
 
-print('These are the restaurants that we reccomend around Waseda area!')
+print('These are the restaurants that we recommend around Waseda!')
 index = 0
 for restaurant_name in restaurants:
     print(str(index) + '. ' + restaurant_name.info())
     index += 1
 
-print('--------------------')
+print('----------------------------------------------------------')
    
 import script001
 import script002
@@ -39,28 +39,29 @@ import script005
 import script006
 
 while True:
-    restaurant_order = int(input('Please enter a number corresponding to a restaurant: '))
+    restaurant_order = input('Please enter a number corresponding to a restaurant: ')
     
-    if restaurant_order ==0 :
+    if restaurant_order =='0' :
         script001.act1()
 
-    elif restaurant_order ==1 :
+    elif restaurant_order =='1' :
         script002.act2()
 
-    elif restaurant_order ==2 :
+    elif restaurant_order =='2' :
         script003.act3()
 
-    elif restaurant_order ==3 :
+    elif restaurant_order =='3' :
         script004.act4()
 
-    elif restaurant_order ==4 :
+    elif restaurant_order =='4' :
         script005.act5()
 
-    elif restaurant_order ==5 :
+    elif restaurant_order =='5' :
         script006.act6()
         
     else:
         print('ERROR:Invalid Input. Try Again!')
+        print()
         continue
     
     break
