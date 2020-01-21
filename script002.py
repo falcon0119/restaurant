@@ -58,7 +58,7 @@ def act2():
         print()
         food_order = input('Please select a number from the drink menu: ')
         
-    while int(food_order) > index or int(drink_order) < 0:
+    while int(drink_order) > index or int(drink_order) < 0:
         print("Please insert a valid number.")
         print()
         drink_order = input('Please select a number from the drink menu: ')
