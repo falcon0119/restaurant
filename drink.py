@@ -6,4 +6,4 @@ class Drink(MenuItem):
         self.amount = amount
 
     def info(self):
-        return self.name + ': ¥' + str(self.price) + ' (' + str(self.amount) + 'mL)'
+        return self.name + ': ¥' + str(self.price) + ' (' + str(self.amount) + 'kcal)'
