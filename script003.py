@@ -19,13 +19,14 @@ def act3():
 
     drinks = [drink1, drink2, drink3]
     
-    print('FOOD MENU')
+    print('***** FOOD MENU *****')
     index = 0
     for food in foods:
         print(str(index) + '. ' + food.info())
         index += 1
 
-    print('DRINK MENU')
+    print()
+    print('***** DRINK MENU *****')
     index = 0
     for drink in drinks:
         print(str(index) + '. ' + drink.info())
@@ -47,3 +48,4 @@ def act3():
 
 # 「合計は〇〇円です」となるように出力してください
     print('Your total is ' + str(result) + ' Yen')
+
