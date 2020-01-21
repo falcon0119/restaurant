@@ -29,24 +29,26 @@ import script004
 import script005
 import script006
 
+while True: 
+    if restaurant_order ==0 :
+        script001.act1()
 
-if restaurant_order ==0 :
-    script001.act1()
+    elif restaurant_order ==1 :
+        script002.act2()
 
-elif restaurant_order ==1 :
-    script002.act2()
+    elif restaurant_order ==2 :
+        script003.act3()
 
-elif restaurant_order ==2 :
-    script003.act3()
+    elif restaurant_order ==3 :
+        script004.act4()
 
-elif restaurant_order ==3 :
-    script004.act4()
+    elif restaurant_order ==4 :
+        script005.act5()
 
-elif restaurant_order ==4 :
-    script005.act5()
-
-elif restaurant_order ==5 :
-    script006.act6()
+    elif restaurant_order ==5 :
+        script006.act6()
+    else:
+        print('ERROR: Invalid input. Try again!') 
 
     
     
