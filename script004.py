@@ -41,7 +41,7 @@ def act4():
     selected_drink = drinks[drink_order]
 
 # コンソールから入力を受け取り、変数countに代入してください
-    count = int(input('何セット買いますか？(3つ以上で1割引): '))
+    count = int(input('How many sets would you like to purchase？(10% off when you purchase 3 sets): '))
 
 # selected_foodとselected_drinkのそれぞれに対して、get_total_priceメソッドを呼び出してください
     result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
