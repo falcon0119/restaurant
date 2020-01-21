@@ -65,7 +65,7 @@ def act6():
     count = int(input('何セット買いますか？(3つ以上で1割引): '))
 
 # selected_foodとselected_drinkのそれぞれに対して、get_total_priceメソッドを呼び出してください
-    result =selected_food.get_total_price(count) + selected_drink.get_total_price(count) + selected_dessert = dessert[dessert_order]
+    result =selected_food.get_total_price(count) + selected_drink.get_total_price(count) + selected_dessert.get_total_price(count)
 
 # 「合計は〇〇円です」となるように出力してください
     print('Your total is ' + str(result) + ' Yen')
