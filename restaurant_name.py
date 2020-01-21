@@ -6,6 +6,6 @@ class Restaurant_name(Restaurant):
         self.place = place
     
     def info(self):
-        return self.name + self.country + ' (' + self.place + '付近)'
+        return self.name + self.country + ' (' + self.place + ' Area)'
     
     
