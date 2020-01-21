@@ -18,6 +18,7 @@ def act4():
 
     drinks= [drink1, drink2]
     
+    print()
     print('***** FOOD MENU *****')
     index = 0
     for food in foods:
