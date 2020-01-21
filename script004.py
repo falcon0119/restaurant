@@ -32,10 +32,10 @@ def act4():
 
     print('--------------------')
 
-    food_order = int(input('食べ物の番号を選択してください: '))
+    food_order = int(input('Please select a number from the food menu: '))
     selected_food = foods[food_order]
 
-    drink_order = int(input('ドリンクの番号を選択してください: '))
+    drink_order = int(input('Please select a number from the drink menu: '))
     selected_drink = drinks[drink_order]
 
 # コンソールから入力を受け取り、変数countに代入してください
