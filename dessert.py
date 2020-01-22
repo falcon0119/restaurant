@@ -1,3 +1,5 @@
+#shota #sophia
+
 from menu_item import MenuItem
 
 class Dessert(MenuItem):
