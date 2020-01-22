@@ -1,3 +1,7 @@
+#sophia #lim
+
+#menu 
+
 def act1():
 
     from food import Food
@@ -53,7 +57,11 @@ def act1():
 
     print('--------------------')
 
+    
+   #lim
+
    #if choose invalid numbers
+   
         
     print('--------------------')
 
@@ -103,6 +111,7 @@ def act1():
     result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
 #print total
+# sophia #grace
 
     print()
     print('----------------------------------------------------------')
@@ -125,12 +134,16 @@ def act1():
     print('----------------------------------------------------------')
     print()
     print('Your order is on its way')
+    
+#lim
 
     import time
 
     for i in range(100):
         print('.', end='')
         time.sleep(1)
+        
+ #repeat for script 1-6, but adjust according to available menu on each restaurant 
 
 
 
