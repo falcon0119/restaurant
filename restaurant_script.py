@@ -19,6 +19,7 @@ input('Please state the building and classroom number of pick up location (Only 
 input('Please insert preferred time of pickup (specify am or pm) : ')
 print('----------------------------------------------------------')
 print('Please note that the only payment method available is CASH')
+print('Incorrectly filled out order forms will not be accepted')
 print('----------------------------------------------------------')
 print()
 print()
