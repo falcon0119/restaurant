@@ -108,6 +108,13 @@ def act6():
     print(str(selected_food.name) + ' ¥' + str(selected_food.price) + ' x ' + str(count))
     print(str(selected_drink.name) + ' ¥' + str(selected_drink.price) + ' x ' + str(count))
     print(str(selected_dessert.name) + ' ¥' + str(selected_dessert.price) + ' x ' + str(count))
+    
+    if count>=3:
+        print ('10% discount')
+
+    else:
+        print('    ')
+
     print('----------------------------------------------------------')
     print('Your total is ' + str(result) + ' Yen')
     print()
