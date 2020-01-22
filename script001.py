@@ -111,6 +111,13 @@ def act1():
     print(str(selected_food.name) + ' ¥' + str(selected_food.price) + ' x ' + str(count))
     print(str(selected_dressing.name) + ' ¥' + str(selected_dressing.price) + ' x ' + str(count))
     print(str(selected_drink.name) + ' ¥' + str(selected_drink.price) + ' x ' + str(count))
+    
+    if count>=3:
+        print ('10% discount')
+
+    else:
+        print('    ')
+
     print('----------------------------------------------------------')
     print('Your total is ' + str(result) + ' Yen')
     print()
